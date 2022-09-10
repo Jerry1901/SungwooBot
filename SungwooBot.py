@@ -1,5 +1,6 @@
 import discord
 from discord.ext.commands import Bot
+import os 
 
 TOKEN = 'MTAxODE4ODYxODA2MzQyNTU4Nw.Giv0Ui.PHqXm4QWWeMaIzEniqgiQIy-AyfmfBoH_UYiOs'
 
@@ -24,4 +25,5 @@ async def on_message(message):
         embed.add_field(name="어허!! ||🖕||이라뇨!!", value="이모지로 욕한것도 욕", inline=False)
         await message.channel.send(embed=embed)
 
-bot.run(TOKEN)
+access_token = os.environ["BOT_TOKEN"]
+bot.run(access_token)
