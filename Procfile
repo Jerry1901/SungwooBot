@@ -1,1 +1,1 @@
-worker: python sungwoobot.py
+worker: python SungwooBot.py
