@@ -1,6 +1,6 @@
 import discord
-from discord.ext.commands import Bot
 import os 
+from discord.ext.commands import Bot
 
 TOKEN = 'access_token'
 
@@ -26,4 +26,4 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
 access_token = os.environ["BOT_TOKEN"]
-bot.run(TOKEN)
+bot.run(ToKEN)
