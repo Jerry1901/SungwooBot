@@ -2,8 +2,6 @@ import discord
 import os 
 from discord.ext.commands import Bot
 
-TOKEN = 'access_token'
-
 intents = discord.Intents.all()
 
 bot = Bot(command_prefix='!', intents=intents)
@@ -26,4 +24,4 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
 access_token = os.environ["BOT_TOKEN"]
-bot.run(TOKEN)
+bot.run(access_token)
